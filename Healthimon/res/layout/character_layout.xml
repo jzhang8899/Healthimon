@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/boxing_ring"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/baseBody"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/base_body" />
+    <ImageView
+        android:id="@+id/armImgView"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+    <ImageView
+        android:id="@+id/legImgView"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+    <ImageView
+        android:id="@+id/chestImgView"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+    <ImageView
+        android:id="@+id/absImgView"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+    <ImageView
+        android:id="@+id/backImgView"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+    
+    <TextView
+        android:id="@+id/userInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/userLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/baseBody"
+        android:layout_toRightOf="@+id/baseBody"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarLvl"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/baseBody"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/userLevel" />
+    
+    <TextView
+        android:id="@+id/strengthaView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/progressBarLvl"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/baseBody" />
+    
+    <ProgressBar
+        android:id="@+id/progressBarArmStr"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/strengthaView"
+        android:layout_toRightOf="@+id/baseBody" />
+    
+    <TextView
+        android:id="@+id/strengthlView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/progressBarArmStr"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/baseBody" />
+    
+    <ProgressBar
+        android:id="@+id/progressBarLegStr"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/strengthlView"
+        android:layout_toRightOf="@+id/baseBody" />
+    
+    <TextView
+        android:id="@+id/healthView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/progressBarLegStr"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/baseBody" />
+    
+    <ProgressBar
+        android:id="@+id/progressBarHealth"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/healthView"
+        android:layout_toRightOf="@+id/baseBody" />
+    
+    <TextView
+        android:id="@+id/defenseView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/progressBarHealth"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/baseBody" />
+    
+    <ProgressBar
+        android:id="@+id/progressBarDefense"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/defenseView"
+        android:layout_toRightOf="@+id/baseBody" />
+    
+    <TextView
+        android:id="@+id/agilityView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/progressBarDefense"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/baseBody" />
+    
+    <ProgressBar
+        android:id="@+id/progressBarAgility"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/agilityView"
+        android:layout_toRightOf="@+id/baseBody" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/agilityView"
+        android:layout_toLeftOf="@+id/agilityView"
+        android:layout_toRightOf="@+id/baseBody"
+        android:alpha="0.5"
+        android:src="@drawable/boxing_stool1" />
+    
+</RelativeLayout>

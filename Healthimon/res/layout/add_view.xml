@@ -1,0 +1,386 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/boxing_ring">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/add_calorie_intake"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="Add Calorie Intake" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/exercisename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1133CC"
+            android:clickable="false"
+            android:paddingLeft="75dp"
+            android:text="ARMS and SHOULDERS"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#CC0000" />
+
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/bicepcurls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bicep Curls"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </TableRow>
+
+<TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/tricepextensions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tricep Extensions"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+<TableRow
+    android:id="@+id/tableRow28"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+        
+    <TextView
+            android:id="@+id/tricepdips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tricep Dips"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+</TableRow>
+
+<TableRow
+    android:id="@+id/tableRow29"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <TextView
+            android:id="@+id/shoulderpress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shoulder Press"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+</TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/shoulderextensions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shoulder Abduction/Flexion/Extension"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/exercisename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00CC00"
+            android:paddingLeft="155dp"
+            android:text="CHEST"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FF00FF" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/pushups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Push-Ups"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/benchpress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bench Press"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/dumbbellcurls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dumb-Bell Culrls"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/exercisename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CC0000"
+            android:paddingLeft="162dp"
+            android:text="BACK"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#CCFF00" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/pullups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pull Ups"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/chinups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chin Ups"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/seatedrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seated Rows"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/shrugs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shrugs"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/exercisename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#660099"
+            android:paddingLeft="125dp"
+            android:text="ABDOMINAL"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#33b5e5" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/situps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Situps"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/crunches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crunches"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/exercisename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF6600"
+            android:paddingLeft="165dp"
+            android:text="LEGS"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#336600" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/sqats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Squats"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/legextensions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leg Extensions"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/legcurls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leg Curls"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/exercisename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#33FFFF"
+            android:paddingLeft="150dp"
+            android:text="CARDIO"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#660000" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/running"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Running"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/swimming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Swimming"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/biking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biking"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/stairs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stairs"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        
+    </TableLayout>
+
+</ScrollView>

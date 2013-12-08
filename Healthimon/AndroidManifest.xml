@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="myweb.csuchico.edu"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17"/>
+         <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconmed"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="myweb.csuchico.edu.Introduction"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+         <activity android:name=".AndroidTabLayoutActivity"
+             android:screenOrientation="portrait"/>
+         <activity android:name=".AddView"
+             android:screenOrientation="portrait"/>
+         <activity android:name=".InputView"
+             android:screenOrientation="portrait"/>
+         <activity android:name=".CharacterView"
+             android:screenOrientation="portrait"/>
+         <activity android:name=".FightsView"
+             android:screenOrientation="portrait"/>
+         <activity android:name=".ChartView"
+             android:screenOrientation="portrait"/>
+         <activity android:name=".SocialView"
+             android:screenOrientation="portrait"/>
+         <activity android:name=".FirstTimeView"
+                   android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
