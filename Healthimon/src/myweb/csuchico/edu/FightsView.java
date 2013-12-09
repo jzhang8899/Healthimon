@@ -597,6 +597,26 @@ public class FightsView extends Activity implements OnClickListener {
           catch(Exception ex) {}
       }
       
+      //increase stats if user wins fight
+      Boolean hasWon = text.matches(".*\\won\\b.*");
+      if(hasWon){
+    	int increaseBy = 2;
+        InputView stats = new InputView();
+    	int newUserExp = 10+prefs.getInt("myweb.csuchico.edu.users_Exp", 0);
+  		int oldLevel = prefs.getInt("myweb.csuchico.edu.users_Level", 0);
+  		int newLevel = stats.getNewLevel(newUserExp);
+  		
+  		//update users stats based on what boss they just beat
+  	  	prefs.edit().putInt("myweb.csuchico.edu.health_Level", (increaseBy+prefs.getInt("myweb.csuchico.edu.health_Level", 0))).commit();
+  	  	prefs.edit().putInt("myweb.csuchico.edu.defense_Level", (increaseBy+prefs.getInt("myweb.csuchico.edu.defense_Level", 0))).commit();
+  	  	prefs.edit().putInt("myweb.csuchico.edu.agility_Level", (increaseBy+prefs.getInt("myweb.csuchico.edu.agility_Level", 0))).commit();
+  	  	prefs.edit().putInt("myweb.csuchico.edu.strengtha_Level", (increaseBy+prefs.getInt("myweb.csuchico.edu.strengtha_Level", 0))).commit();
+  	  	prefs.edit().putInt("myweb.csuchico.edu.strengthl_Level", (increaseBy+prefs.getInt("myweb.csuchico.edu.strengthl_Level", 0))).commit();
+  	  	prefs.edit().putInt("myweb.csuchico.edu.users_Exp", newUserExp).commit();
+  	  	prefs.edit().putInt("myweb.csuchico.edu.users_Level", newLevel).commit();
+    	text += " +10xp";
+      }
+      
       //Toast to tell user if he won or lost the fight
       if (!nameToFight.equals("HMON1234UPDTE5678"))
       {
