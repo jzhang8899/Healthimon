@@ -167,10 +167,10 @@ public class InputView extends Activity implements OnClickListener {
   		case 2:
   			// Check if input for exercise is unbelievable. If it is return false.
   			// Each exercise is a different estimate
-  			if (param1 > 200)
-  				return false;
-  			if (param2 > 100)
-  				return false;
+  			//if (param1 > 200)
+  				//return false;
+  			//if (param2 > 100)
+  				//return false;
   			// If neither check flagged false it must be valid
   			
   			// So proceed...
@@ -327,10 +327,10 @@ public class InputView extends Activity implements OnClickListener {
   		case 8:
   			// Check if input for exercise is unbelievable. If it is return false.
   			// Each exercise is a different estimate
-  			if (param1 > 350)
-  				return false;
-  			if (param2 > 100)
-  				return false;
+  			//if (param1 > 350)
+  				//return false;
+  			//if (param2 > 100)
+  				//return false;
   			// If neither check flagged false it must be valid
   			
   			// So proceed...
@@ -485,10 +485,10 @@ public class InputView extends Activity implements OnClickListener {
   		case 14:
   			// Check if input for exercise is unbelievable. If it is return false.
   			// Each exercise is a different estimate
-  			if (param1 > 500)
-  				return false;
-  			if (param2 > 200)
-  				return false;
+  			//if (param1 > 500)
+  				//return false;
+  			//if (param2 > 200)
+  				//return false;
   			// If neither check flagged false it must be valid
   			
   			// So proceed...
@@ -537,10 +537,10 @@ public class InputView extends Activity implements OnClickListener {
   		case 16:
   			// Check if input for exercise is unbelievable. If it is return false.
   			// Each exercise is a different estimate
-  			if (param1 > 500)
-  				return false;
-  			if (param2 > 100)
-  				return false;
+  			//if (param1 > 500)
+  				//return false;
+  			//if (param2 > 100)
+  				//return false;
   			// If neither check flagged false it must be valid
   			
   			// So proceed...
@@ -699,7 +699,7 @@ public class InputView extends Activity implements OnClickListener {
   			break;
 	 }
 	// Inputs must have been valid so save stats
-  saveStats(strengtha,strengthl,agility, defense,health);
+  saveStats(strengtha,strengthl,agility,defense,health);
   return true;
 }
 

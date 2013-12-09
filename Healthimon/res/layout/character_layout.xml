@@ -36,12 +36,6 @@
         android:layout_height="400dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true" />
-    <ImageView
-        android:id="@+id/backImgView"
-        android:layout_width="200dp"
-        android:layout_height="400dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true" />
     
     <TextView
         android:id="@+id/userInfo"
@@ -169,7 +163,6 @@
         android:layout_alignTop="@+id/agilityView"
         android:layout_toLeftOf="@+id/agilityView"
         android:layout_toRightOf="@+id/baseBody"
-        android:alpha="0.5"
         android:src="@drawable/boxing_stool1" />
     
 </RelativeLayout>

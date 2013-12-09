@@ -20,8 +20,7 @@ public class CharacterView extends Activity implements OnClickListener{
 	private TextView strengthaView,strengthlView,agilityView,defenseView,healthView,userLevel,userInfo;
 	private SharedPreferences prefs;
 	private ProgressBar progressBarArmStr,progressBarLegStr,progressBarAgility,progressBarDefense,progressBarLvl,progressBarHlth;
-    private ImageView armImg, legImg, chestImg, absImg, backImg;
-    private int imgTotal = 0;
+    private ImageView armImg, legImg, chestImg, absImg;
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -55,14 +54,6 @@ public class CharacterView extends Activity implements OnClickListener{
 	    		prefs.getInt("myweb.csuchico.edu.bench_Level",0) + 
 	    		prefs.getInt("myweb.csuchico.edu.dumbbellFlys_Level",0)
 	    		) / 3;
-	    
-	    int backAvg = 
-	    		(
-	    		prefs.getInt("myweb.csuchico.edu.pullUp_Level",0) + 
-	    		prefs.getInt("myweb.csuchico.edu.chinUp_Level",0) + 
-	    		prefs.getInt("myweb.csuchico.edu.seatedRows_Level",0) + 
-	    		prefs.getInt("myweb.csuchico.edu.shrugs_Level",0)
-	    		) / 4;
 	    
 	    int absAvg =
 	    		(
@@ -126,11 +117,9 @@ public class CharacterView extends Activity implements OnClickListener{
 	  	armImg = (ImageView) findViewById(R.id.armImgView);
 	  	legImg = (ImageView) findViewById(R.id.legImgView);
 	  	chestImg = (ImageView) findViewById(R.id.chestImgView);
-	  	backImg = (ImageView) findViewById(R.id.backImgView);
 	  	absImg = (ImageView) findViewById(R.id.absImgView);
 	  	
 		// Figure out what arm/shoulder img to display
-		imgTotal = 0;
 		if (armAvg < 5)
 		{
 			// Leave image blank to show base body part (stage 1)
@@ -154,13 +143,10 @@ public class CharacterView extends Activity implements OnClickListener{
 		else if (armAvg >= 20)
 		{
 			// Stage 5
-			//armImg.setImageDrawable(getResources().getDrawable(R.drawable.arms_level5));
+			armImg.setImageDrawable(getResources().getDrawable(R.drawable.arms_level5));
 		}
-		
-		// Populate image view
-		
+	
 		// Figure out what leg img to display
-		imgTotal = 0;
 		if (legAvg < 5)
 		{
 			// Leave image blank to show base body part (stage 1)
@@ -169,28 +155,25 @@ public class CharacterView extends Activity implements OnClickListener{
 		else if (legAvg >= 5 && legAvg <= 9)
 		{
 			// Stage 2
-			//legImg.setImageDrawable(getResources().getDrawable(R.drawable.legs_level2));
+			legImg.setImageDrawable(getResources().getDrawable(R.drawable.legs_level2));
 		}
 		else if (legAvg >=10 && legAvg <= 14)
 		{
 			// Stage 3
-			//legImg.setImageDrawable(getResources().getDrawable(R.drawable.legs_level3));
+			legImg.setImageDrawable(getResources().getDrawable(R.drawable.legs_level3));
 		}
 		else if (legAvg >= 15 && legAvg <= 19)
 		{
 			// Stage 4
-			//legImg.setImageDrawable(getResources().getDrawable(R.drawable.legs_level4));
+			legImg.setImageDrawable(getResources().getDrawable(R.drawable.legs_level4));
 		}
 		else if (legAvg >= 20)
 		{
 			// Stage 5
-			//legImg.setImageDrawable(getResources().getDrawable(R.drawable.legs_level5));
+			legImg.setImageDrawable(getResources().getDrawable(R.drawable.legs_level5));
 		}
-		
-		// Populate image view
-		
+
 		// Figure out what chest img to display
-		imgTotal = 0;
 		if (chestAvg < 5)
 		{
 			// Leave image blank to show base body part (stage 1)
@@ -199,28 +182,25 @@ public class CharacterView extends Activity implements OnClickListener{
 		else if (chestAvg >= 5 && chestAvg <= 9)
 		{
 			// Stage 2
-			//chestImg.setImageDrawable(getResources().getDrawable(R.drawable.chest_level2));
+			chestImg.setImageDrawable(getResources().getDrawable(R.drawable.chest_level2));
 		}
 		else if (chestAvg >=10 && chestAvg <= 14)
 		{
 			// Stage 3
-			//chestImg.setImageDrawable(getResources().getDrawable(R.drawable.chest_level3));
+			chestImg.setImageDrawable(getResources().getDrawable(R.drawable.chest_level3));
 		}
 		else if (chestAvg >= 15 && chestAvg <= 19)
 		{
 			// Stage 4
-			//chestImg.setImageDrawable(getResources().getDrawable(R.drawable.chest_level4));
+			chestImg.setImageDrawable(getResources().getDrawable(R.drawable.chest_level4));
 		}
 		else if (chestAvg >= 20)
 		{
 			// Stage 5
-			//chestImg.setImageDrawable(getResources().getDrawable(R.drawable.chest_level5));
+			chestImg.setImageDrawable(getResources().getDrawable(R.drawable.chest_level5));
 		}
 		
-		// Populate image view
-		
 		// Figure out what abs img to display
-		imgTotal = 0;
 		if (absAvg < 5)
 		{
 			// Leave image blank to show base body part (stage 1)
@@ -229,54 +209,23 @@ public class CharacterView extends Activity implements OnClickListener{
 		else if (absAvg >= 5 && absAvg <= 9)
 		{
 			// Stage 2
-			//absImg.setImageDrawable(getResources().getDrawable(R.drawable.abs_level2));
+			absImg.setImageDrawable(getResources().getDrawable(R.drawable.abs_level1));
 		}
 		else if (absAvg >=10 && absAvg <= 14)
 		{
 			// Stage 3
-			//absImg.setImageDrawable(getResources().getDrawable(R.drawable.abs_level3));
+			absImg.setImageDrawable(getResources().getDrawable(R.drawable.abs_level3));
 		}
 		else if (absAvg >= 15 && absAvg <= 19)
 		{
 			// Stage 4
-			//absImg.setImageDrawable(getResources().getDrawable(R.drawable.abs_level4));
+			absImg.setImageDrawable(getResources().getDrawable(R.drawable.abs_level4));
 		}
 		else if (absAvg >= 20)
 		{
 			// Stage 5
-			//absImg.setImageDrawable(getResources().getDrawable(R.drawable.abs_level5));
+			absImg.setImageDrawable(getResources().getDrawable(R.drawable.abs_level5));
 		}
-		
-		
-		// Figure out what back img to display
-		imgTotal = 0;
-		if (backAvg < 5)
-		{
-			// Leave image blank to show base body part (stage 1)
-			backImg.setImageDrawable(null);
-		}
-		else if (backAvg >= 5 && backAvg <= 9)
-		{
-			// Stage 2
-			//backImg.setImageDrawable(getResources().getDrawable(R.drawable.back_level2));
-		}
-		else if (backAvg >=10 && backAvg <= 14)
-		{
-			// Stage 3
-			//backImg.setImageDrawable(getResources().getDrawable(R.drawable.back_level3));
-		}
-		else if (backAvg >= 15 && backAvg <= 19)
-		{
-			// Stage 4
-			//backImg.setImageDrawable(getResources().getDrawable(R.drawable.back_level4));
-		}
-		else if (backAvg >= 20)
-		{
-			// Stage 5
-			//backImg.setImageDrawable(getResources().getDrawable(R.drawable.back_level5));
-		}
-		
-		
     }
 
 	@Override
