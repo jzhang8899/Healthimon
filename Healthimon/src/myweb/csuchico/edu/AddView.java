@@ -44,7 +44,7 @@ public class AddView extends Activity implements OnChildClickListener {
 			{
 				"Push Ups",
 				"Bench Press",
-				"Dumb-Bell Curls"
+				"Dumb-Bell FLys"
 				
 			},
 			{
