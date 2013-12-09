@@ -494,7 +494,7 @@ public class InputView extends Activity implements OnClickListener {
   			// So proceed...
   			int sitUp_Level=prefs.getInt("myweb.csuchico.edu.sitUp_Level", 0);
   			int sitUp_Exp=prefs.getInt("myweb.csuchico.edu.sitUp_Level", 0);
-  			defense = (sqrt(param1) * param2) / (sitUp_Level * 2 + 10);
+  			defense = (param1 * param2) / (sitUp_Level * 2 + 10);
   			agility = defense/6;
 
   			sitUp_Exp = sitUp_Exp + defense + agility;
@@ -520,7 +520,7 @@ public class InputView extends Activity implements OnClickListener {
   			// So proceed...
   			int crunches_Level=prefs.getInt("myweb.csuchico.edu.crunches_Level", 0);
   			int crunches_Exp=prefs.getInt("myweb.csuchico.edu.crunches_Exp", 0);
-  			defense = (sqrt(param1) * param2) / (crunches_Level * 5 + 10);
+  			defense = (param1 * param2) / (crunches_Level * 5 + 10);
   			agility = defense/6;
 
   			crunches_Exp = crunches_Exp + defense + agility;
@@ -653,7 +653,7 @@ public class InputView extends Activity implements OnClickListener {
   			// So proceed...
   			int swimming_Level=prefs.getInt("myweb.csuchico.edu.swimming_Level", 0);
   			int swimming_Exp=prefs.getInt("myweb.csuchico.edu.swimming_Exp", 0);
-  			agility = param1 * param2 / 3 / swimming_Level;
+  			agility = param1 * 1000 / param2 / swimming_Level;
   			health = agility/3;
   			defense = agility/6;
 
