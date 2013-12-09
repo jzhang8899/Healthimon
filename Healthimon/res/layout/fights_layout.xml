@@ -28,6 +28,7 @@
          android:layout_width="200dp"
          android:layout_height="64dp"
          android:layout_marginBottom="5dp"
+         android:layout_marginTop="5dp"
          android:layout_below="@+id/fightName"
          android:layout_centerHorizontal="true" />
 
@@ -82,5 +83,13 @@
          android:layout_alignBottom="@+id/fightfriends"
          android:layout_alignParentRight="true"
          android:text="Random" />
+
+     <View
+         android:id="@+id/view01"
+         android:layout_width="fill_parent"
+         android:layout_height="2dp"
+         android:layout_alignBottom="@+id/fightName"
+         android:layout_alignParentLeft="true"
+         android:background="#313437" />
 
 </RelativeLayout>
